@@ -1,0 +1,33 @@
+{
+  "app": {
+    "name": "\u0bb5\u0bbf\u0b9f\u0bc1\u0b95\u0ba4\u0bc8\u0b95\u0bb3\u0bcd",
+    "error": "Failed to collect vidugadhai. Check your network settings" ,
+    "pudhir_no": "\u0bb5\u0bbf\u0b9f\u0bc1\u0b95\u0ba4\u0bc8 \u0b8e\u0ba3\u0bcd" 
+  },
+  "label": {
+    "answer" : "\u0bb5\u0bbf\u0b9f\u0bc8",
+    "previous" : "\u0bae\u0bc1\u0ba8\u0bcd\u0ba4\u0bbf\u0ba9",  
+    "next" : "\u0b85\u0b9f\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1"
+  },
+  "mode": {
+    "simple": "\u0b9a\u0bc1\u0bb2\u0baa \u0bae\u0bc1\u0bb1\u0bc8",
+    "challenge": "\u0b9a\u0bb5\u0bbe\u0bb2\u0bcd \u0bae\u0bc1\u0bb1\u0bc8"
+  },
+  "desc": {
+    "simple": "\u0ba8\u0bbf\u0bae\u0bcd\u0bae\u0ba4\u0bbf\u0baf\u0bbe\u0ba9 \u0bae\u0bc1\u0bb1\u0bc8\u0baf\u0bbf\u0bb2\u0bcd \u0baa\u0bc1\u0ba4\u0bbf\u0bb0\u0bcd \u0baf\u0bc2\u0b95\u0bbf\u0b95\u0bcd\u0b95",
+    "challenge": "Solve Riddle in Challenge Mode"
+  },
+  "button" : {
+    "restart" : "\u0bae\u0bb1\u0bc1\u0ba4\u0bc6\u0bbe\u0b9f\u0b95\u0bcd\u0b95\u0bae\u0bcd",
+    "continue" : "\u0ba4\u0bca\u0b9f\u0bb0\u0bcd\u0b95",
+    "start" : "Start",
+    "favourite" : "\u0bb5\u0bbf\u0bb0\u0bc1\u0bae\u0bcd\u0baa\u0bbf\u0baf\u0bb5\u0bc8"
+  },
+  "error": {
+    "network": "Could not collect data from server. Please check your internet settings and try again",
+    "unknown": "Something went wrong and we are not able to handle it",
+    "end": "Thank you for using Vidugadaigal App. Hope you had fun. Please try later for more Vidugadhaigal", 
+	"favempty": "You don't have any favourite items" 
+  }
+}
+

@@ -1,0 +1,19 @@
+<md-content flex id="content" class="main_shaded" layout-fill layout="column">
+    <div ng-show="$ctrl.isLoading" layout="row" layout-align="center center" class="progress">
+        <md-progress-circular md-mode="indeterminate" md-diameter="100"></md-progress-circular> 
+    </div>
+    <div ng-show="$ctrl.isError" layout="row" layout-align="center center" class="error">
+        <p class="error">{{ $ctrl.message | i18next }}</p>
+    </div>
+    <div ng-if="$ctrl.isContent" flex class="stats-content">
+		<md-list>
+		  <md-list-item class="" ng-repeat="stat in $ctrl.stats">
+			<div class="md-list-item-text">
+			  <h3 ng-if="$ctrl.section == 'views'">{{stat.$id}} - {{stat.views}}</h3>
+			  <h3 ng-if="$ctrl.section == 'likes'">{{stat.$id}} - {{stat.size}}</h3>
+			  <md-button class="md-secondary" ng-click="$ctrl.pudhir($event, stat.$id)">Pudhir</md-button>
+			</div>		  
+		  </md-list-item>
+		</md-list>		
+    </div>   
+</md-content>

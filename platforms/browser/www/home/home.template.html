@@ -1,0 +1,52 @@
+<div layout="column" layout-fill class="ui-page-active" id="main">
+	<md-toolbar class="toolbar md-accent" layout="row" ng-if="$ctrl.testDevice">
+		<div class="md-toolbar-tools">
+			<h2 md-truncate flex>My Thing</h2>
+			<md-button ng-href="#!/stats/views">Views</md-button>
+			<md-button ng-href="#!/stats/likes">Likes</md-button>
+			<md-button ng-href="#!/stats/favs">Favs</md-button>
+		</div>	
+	</md-toolbar>
+
+
+	<md-content flex="" layout="column" class="main_shaded">
+	  <div flex class="home-actions">
+		  <div flex class="home-button-cnt"> 
+			<md-button class="md-primary md-raised home-button" ng-click="$ctrl.restart()" ng-disabled="$ctrl.notstarted">{{"button.restart" | i18next}}</md-button>
+		  </div>
+		  <div flex class="home-button-cnt">   
+			<md-button class="md-primary md-raised home-button" ng-href="#!/favourites" ng-disabled="$ctrl.favempty">{{"button.favourite" | i18next}}</md-button> 
+		  </div>  
+		  <div flex class="home-button-cnt">   
+			<md-button class="md-primary md-raised home-button" ng-href="#!/pudhir">{{"button.continue" | i18next}}</md-button>
+		  </div>
+	  </div>
+	</md-content>
+
+	<md-toolbar class="toolbar" layout="row">
+		<div flex layout-align="center center" ng-click="$ctrl.feedback()" class="icon-cnt">
+			<div class="footer-icon">
+				<md-icon md-menu-origin class="material-icons">email</md-icon>
+			</div>  
+			<div class="footer-label">
+				Feedback
+			</div>
+		</div>    
+		<div flex layout-align="center center" ng-click="$ctrl.share()" class="icon-cnt">
+			<div class="footer-icon">
+				<md-icon md-menu-origin class="material-icons">share</md-icon>
+			</div>  
+			<div class="footer-label">
+				Share
+			</div>
+		</div>    
+		<div flex layout-align="center center" ng-click="$ctrl.rateus()" class="icon-cnt">        
+			<div class="footer-icon">
+				<md-icon md-menu-origin class="material-icons">grade</md-icon>
+			</div>  
+			<div class="footer-label">
+				Rate Me
+			</div>
+		</div>    
+	</md-toolbar>
+</div>

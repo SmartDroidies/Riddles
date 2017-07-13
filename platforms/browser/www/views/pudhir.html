@@ -1,0 +1,74 @@
+<md-toolbar layout="row" >
+  <div class="md-toolbar-tools" data-ng-hide="searchmode">
+    <md-button aria-label="Home" class="md-icon-button" ng-click="home()">
+      <md-icon md-menu-origin class="material-icons">home</md-icon>
+    </md-button>
+    <h3>{{'app.name' | i18next}}</h3>
+    <span flex></span>
+  </div>  
+</md-toolbar>
+
+<md-content flex id="content" class="main_shaded">
+    <div ng-show="pudhirCtrl.isLoading" layout="row" layout-align="center center" class="progress">
+        <md-progress-circular md-mode="indeterminate" md-diameter="100"></md-progress-circular> 
+    </div>
+    <div ng-show="pudhirCtrl.isError" layout="row" layout-align="center center" class="error">
+        <p class="error">{{ pudhirCtrl.message | i18next }}</p>
+    </div>
+    <div ng-if="pudhirCtrl.isContent" flex class="pudhir-content">
+        <md-toolbar class="md-accent">
+          <div class="md-toolbar-tools">
+            <h2>{{'app.pudhir_no' | i18next}} - {{pudhirCtrl.pudhir.seq}}</h2>
+            <span flex=""></span>
+            <md-button aria-label="UnFavourite" class="md-icon-button" ng-if="!pudhirCtrl.pudhir.favourite" ng-click="pudhirCtrl.favourite($event, pudhirCtrl.pudhir)">
+              <md-icon md-menu-origin class="material-icons" style="color: red;">favorite_border</md-icon>
+            </md-button>
+            <md-button aria-label="Favourite" class="md-icon-button" ng-if="pudhirCtrl.pudhir.favourite" ng-click="pudhirCtrl.unfavourite($event, pudhirCtrl.pudhir)">
+              <md-icon md-menu-origin class="material-icons" style="color: red;">favorite</md-icon>
+            </md-button>
+            <md-button aria-label="Share" class="md-icon-button" ng-click="pudhirCtrl.sharePudhir(pudhirCtrl.pudhir)">
+              <md-icon md-menu-origin class="material-icons" style="color: red;">share</md-icon>
+            </md-button>
+            <!--md-button class="md-icon-button" aria-label="More">
+              <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+            </md-button-->
+          </div>
+        </md-toolbar>
+            
+        <div flex>
+            <p class="pudhir" flex>{{pudhirCtrl.pudhir.content}}</p>
+            <!--p class="pudhir">Sequence : {{pudhir.seq}}</p-->
+            <div layout="row"  layout-align="center center" class="answer-cnt md-accent" ng-show="pudhirCtrl.isAnswer" flex="">
+                {{pudhirCtrl.pudhir.ans}}
+            </div>    
+            <!--p class="pudhir">{{pudhir.clue}}</p>
+            <p class="pudhir">{{pudhir.category}}</p>
+            <md-button class="share" md-no-ink ng-click="actionView()">
+                <md-icon md-svg-icon="share"></md-icon>
+            </md-button-->
+        </div>    
+    
+        <md-toolbar ng-show="pudhirCtrl.isAction" layout-align="center center" layout="row" class="action_bar md-accent">
+            <!--md-button aria-label="Clue" class="md-icon-button md-primary" ng-click="$mdOpenMenu($event)">
+                <md-icon md-menu-origin class="material-icons md-fab">info_outline</md-icon>
+            </md-button-->
+            <!--md-button aria-label="Setting" class="md-icon-button md-primary" ng-click="$mdOpenMenu($event)">
+                <md-icon md-menu-origin class="material-icons">check_circle</md-icon>
+            </md-button-->
+            <!--md-button aria-label="Setting" class="md-icon-button md-primary" ng-click="$mdOpenMenu($event)">
+                <md-icon md-menu-origin class="material-icons">share</md-icon>
+            </md-button-->
+            <md-button class="md-raised md-primary pudhir-action-button" ng-hide="pudhirCtrl.hidePrev" aria-label="Prev" ng-click="pudhirCtrl.previous(pudhirCtrl.pudhir.seq, pudhirCtrl.fav_mode)"> 
+                {{'label.previous' | i18next}} 
+             </md-button>
+            <md-button class="md-raised md-primary pudhir-action-button" aria-label="Answer" ng-click="pudhirCtrl.viewAnswer()"> 
+                {{'label.answer' | i18next}} 
+            </md-button>
+            <md-button class="md-raised md-primary pudhir-action-button" ng-hide="pudhirCtrl.hideNext" aria-label="Next" ng-click="pudhirCtrl.next(pudhirCtrl.pudhir.seq, pudhirCtrl.fav_mode)"> 
+                {{'label.next' | i18next}} 
+            </md-button>
+        </md-toolbar> 
+
+    </div>   
+
+</md-content>

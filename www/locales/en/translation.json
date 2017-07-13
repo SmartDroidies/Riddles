@@ -1,0 +1,20 @@
+{
+  "app": {
+    "name": "\u0bb5\u0bbf\u0b9f\u0bc1\u0b95\u0ba4\u0bc8\u0b95\u0bb3\u0bcd",
+    "error": "Failed to collect vidugadhai. Check your network settings" ,
+    "pudhir_no": "\u0bb5\u0bbf\u0b9f\u0bc1\u0b95\u0ba4\u0bc8 \u0b8e\u0ba3\u0bcd" 
+  },
+  "label": {
+  	"answer" : "\u0bb5\u0bbf\u0b9f\u0bc8",
+  	"previous" : "\u0bae\u0bc1\u0ba8\u0bcd\u0ba4\u0bbf\u0ba9",	
+  	"next" : "\u0b85\u0b9f\u0bc1\u0ba4\u0bcd\u0ba4\u0bc1"
+  },
+  "mode": {
+  	"simple": "\u0b9a\u0bae\u0bc8\u0baf\u0bb2\u0bcd",
+    "challenge": "\u0b9a\u0bc8\u0bb5\u0bae\u0bcd"
+  },
+  "desc": {
+    "simple": "\u0b9a\u0bae\u0bc8\u0baf\u0bb2\u0bcd",
+    "challenge": "\u0b9a\u0bc8\u0bb5\u0bae\u0bcd"
+  }
+}

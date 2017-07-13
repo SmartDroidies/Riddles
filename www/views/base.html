@@ -1,0 +1,79 @@
+<!-- Toolbar -->
+<md-toolbar class="toolbar" layout="row" >
+    <div class="md-toolbar-tools filled" layout-align="center center">
+        <h2 class="md-flex">{{'app.name' | i18next}}</h2>
+   </div>    
+</md-toolbar>
+
+<md-content flex="" layout="column" class="main_shaded">
+  <div flex class="home-actions">
+      <div flex class="home-button-cnt"> 
+        <md-button class="md-primary md-raised home-button" ng-click="homeCtrl.restart()" ng-disabled="{{notstarted}}">{{"button.restart" | i18next}}</md-button>
+      </div>
+      <div flex class="home-button-cnt">   
+        <md-button class="md-primary md-raised home-button" ng-disabled="{{fav_empty}}" ng-href="#/pudhir/casual/favourite">{{"button.favourite" | i18next}}</md-button>
+      </div>  
+      <div flex class="home-button-cnt">   
+        <md-button class="md-primary md-raised home-button" ng-href="#/pudhir/casual/continue">{{"button.continue" | i18next}}</md-button>
+      </div>
+  </div> 
+  <!--md-card md-theme="default">
+    <md-card-title class="card-mode-title">
+      <md-card-title-text>
+        <h4 class="md-headline mode-head">{{'mode.simple' | i18next}}</h4>
+        <p class="md-subhead mode-desc">{{'desc.simple' | i18next}}</p>
+      </md-card-title-text>
+      <md-card-title-media>
+        <div class="md-media-sm card-media"><img src="img/casual.jpg"/></div>
+      </md-card-title-media>
+    </md-card-title>
+    <md-card-actions layout="row" layout-align="end center" class="mode-action-cnt">
+      <md-button class="md-primary md-raised mode-action-button" ng-click="homeCtrl.restart()">Restart</md-button>
+      <md-button class="md-primary md-raised mode-action-button" ng-href="#/pudhir/casual/favourite">Favourites</md-button>
+      <md-button class="md-primary md-raised mode-action-button" ng-href="#/pudhir/casual/continue">{{homeCtrl.startBtnText}}</md-button>
+    </md-card-actions>
+  </md-card-->
+
+  <!--md-card md-theme="default" class="maintanance_cnt">
+    <img src="img/maintenance.png" class="maintanance"/>
+    <md-card-title class="card-mode-title">
+      <md-card-title-text>
+        <span class="md-headline mode-head">{{'mode.challenge' | i18next}}</span>
+        <span class="md-subhead mode-desc">{{'desc.challenge' | i18next}}</span>
+      </md-card-title-text>
+      <md-card-title-media>
+        <div class="md-media-sm card-media"><img src="img/maintenance.png"/></div>
+      </md-card-title-media>
+    </md-card-title>
+    <md-card-actions layout="row" layout-align="end center" class="mode-action-cnt">
+      <md-button class="md-primary md-raised" ng-href="#/pudhir" class="mode-action-button">Start</md-button>
+    </md-card-actions>
+  </md-card-->
+</md-content>
+
+<md-toolbar class="toolbar" layout="row">
+    <div flex layout-align="center center" ng-click="feedback()" class="icon-cnt">
+        <div class="footer-icon">
+            <md-icon md-menu-origin class="material-icons">email</md-icon>
+        </div>  
+        <div class="footer-label">
+            Feedback
+        </div>
+    </div>    
+    <div flex layout-align="center center" ng-click="share()" class="icon-cnt">
+        <div class="footer-icon">
+            <md-icon md-menu-origin class="material-icons">share</md-icon>
+        </div>  
+        <div class="footer-label">
+            Share
+        </div>
+    </div>    
+    <div flex layout-align="center center" ng-click="rateus()" class="icon-cnt">        
+        <div class="footer-icon">
+            <md-icon md-menu-origin class="material-icons">grade</md-icon>
+        </div>  
+        <div class="footer-label">
+            Rate Me
+        </div>
+    </div>    
+</md-toolbar>

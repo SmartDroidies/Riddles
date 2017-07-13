@@ -1,0 +1,188 @@
+html, body {
+  /* font-family: monospace, sans-serif; */
+  font-size:14px;
+  height:100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+md-toolbar h3 {
+  margin: auto;
+  font-weight: 500;
+}
+
+home, pudhir, stats-views {
+  flex: 1;
+}
+
+.main_shaded { 
+  background-color: #232B2B;  
+}
+
+.pudhir, .error {
+  font-size: 18px;
+  margin: 30px 10px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  line-height: 30px;
+}
+
+.pudhir {
+  font-weight: 500;
+  color: rgba(255,255,255,0.87); 
+}
+
+.error {
+  color: #FFFFFF; 
+}
+
+.progress, .error {
+  margin-top: 100px;
+}
+
+.action_bar {
+  margin-bottom: 20px;
+}
+
+.answer-cnt {
+  color: rgba(255,255,255,0.87); 
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.75;  
+  line-height: 30px;
+  padding-bottom: 20px;
+}
+
+button.md-raised {
+ /*    font-size: 22px; */
+}
+
+.answer {
+  font-size: 24px;
+  font-weight: 500;
+  background-color: rgb(244,67,54);
+  opacity: 1;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+md-card-title {
+    padding: 12px 8px 8px;
+}
+
+/*
+.animate-answer {
+  transition: all linear 2s;
+  background-color: lightblue;
+  height: 100px;
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  line-height: 20px;
+  opacity: 1;
+  padding: 10px;
+}
+
+.animate-answer.ng-hide-add, .animate-answer.ng-hide-remove {
+  transition: all linear 2s;
+}
+
+.animate-answer.ng-hide {
+  line-height: 0;
+  opacity: 0;
+  padding: 0 10px;
+}
+
+*/
+
+div.footer-icon, div.footer-label  {
+  text-align: center;
+  font-size: 16px;
+}
+
+.icon-cnt {
+  padding: 5px;
+}
+
+
+md-card-title.card-mode-title {
+    padding: 16px 8px 8px;
+}
+
+h4.mode-head {
+  font-size: 20px;
+  padding: 0px;
+  margin: 0px;
+}
+
+p.mode-desc {
+  margin: 0px;
+  padding: 5px;
+}
+
+.pudhir-content {
+  padding: 8px;
+  margin-top: 20px;
+  min-height: 200px;
+}
+
+button.md-primary.md-raised.mode-action-button.md-button.md-default-theme {
+  margin: 10px;
+}
+
+img.maintanance {
+    width: 270px;
+    height: 170px;
+    margin: auto;
+    padding: 10px 5px;
+}
+
+div.home-actions {
+}
+
+div.home-button-cnt {
+    margin: 25px;
+    text-align: center;
+}
+
+.home-button {
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    font-weight: normal;
+    vertical-align: middle;
+    border-radius: 10px;
+    padding: 5px 20px;
+}
+
+h2.pudhir_no {
+	font-size: 16px ! important;
+}
+
+button.md-button.pudhir-action-button.md-raised[disabled] {
+    background-color: rgb(35, 43, 43);
+    color: rgb(97,97,97) ! important;
+}
+
+.views {
+    font-size: 14px;
+    color: rgba(255,255,255,0.87);
+    padding-left: 8px;
+	margin-top: 20px;
+}
+
+.stats-cnt {
+	padding : 4px;
+}
+
+button.action-button-icon {
+    min-width: 40px;
+    margin: 6px 4px;
+    color: rgba(255,255,255,0.87);
+}
+
+button.active > md-icon > svg {
+    fill: rgb(244,67,54);
+}

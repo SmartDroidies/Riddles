@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget android-versionCode="4" id="com.smart.droid.tamil.pudhir" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="https://cordova.apache.org/ns/1.0">
+    <name>\u0bb5\u0bbf\u0b9f\u0bc1\u0b95\u0ba4\u0bc8\u0b95\u0bb3\u0bcd</name>
+    <description>
+        Vidugadhaigal - A Sweet and Short App for Tamil Audience
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        SmartDroidies Team 
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <preference name="SplashScreen" value="screen" />
+    <preference name="SplashScreenDelay" value="7000" />
+    <preference name="AutoHideSplashScreen" value="false" />
+</widget>

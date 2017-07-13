@@ -1,0 +1,62 @@
+<md-content flex id="content" class="main_shaded" layout-fill layout="column">
+    <div ng-show="$ctrl.isLoading" layout="row" layout-align="center center" class="progress">
+        <md-progress-circular md-mode="indeterminate" md-diameter="100"></md-progress-circular> 
+    </div>
+    <div ng-show="$ctrl.isError" layout="row" layout-align="center center" class="error">
+        <p class="error">{{ $ctrl.message | i18next }}</p>
+    </div>
+    <div ng-if="$ctrl.isContent" flex class="pudhir-content">
+        <md-toolbar class="md-accent">
+          <div class="md-toolbar-tools">
+            <h2 class="pudhir_no">{{'app.pudhir_no' | i18next}} - {{$ctrl.pudhir.seq}}</h2>
+            <span flex=""></span>
+            <md-button aria-label="UnFavourite" class="md-icon-button" ng-if="!$ctrl.pudhir.favourite" ng-click="$ctrl.favourite($event, $ctrl.pudhir)">
+              <md-icon md-menu-origin class="material-icons" style="color: red;">favorite_border</md-icon>
+            </md-button>
+            <md-button aria-label="Favourite" class="md-icon-button" ng-if="$ctrl.pudhir.favourite" ng-click="$ctrl.unfavourite($event, $ctrl.pudhir)">
+              <md-icon md-menu-origin class="material-icons" style="color: red;">favorite</md-icon>
+            </md-button>
+            <md-button aria-label="Share" class="md-icon-button" ng-click="pudhirCtrl.sharePudhir(pudhirCtrl.pudhir)">
+              <md-icon md-menu-origin class="material-icons" style="color: red;">share</md-icon>
+            </md-button>
+            <!--md-button class="md-icon-button" aria-label="More">
+              <md-icon md-svg-icon="img/icons/more_vert.svg"></md-icon>
+            </md-button-->
+          </div>
+        </md-toolbar>
+            
+        <div flex class="pudhir-content">
+			<!--pre> {{$ctrl.pudhir}} </pre-->
+            <p class="pudhir" flex>{{$ctrl.pudhir.quest}}</p>
+            <div layout="row"  layout-align="center center" class="answer-cnt md-accent" ng-show="$ctrl.pudhir.isAnswer" flex="">
+                {{$ctrl.pudhir.ans}}
+            </div>    
+        </div>    
+
+		<div layout="row" class="stats-cnt">
+			<div class="views">{{$ctrl.pudhir.stats.views}} Views</div>
+			<div flex></div>
+			<div>
+				<md-button aria-label="Thumb Up" ng-click="$ctrl.like($ctrl.pudhir)" ng-class="{ 'active': $ctrl.pudhir.liked }" class="action-button-icon"> 
+					<md-icon md-svg-icon="images/svg/thumb_up.svg"></md-icon> {{$ctrl.pudhir.likes}}
+				</md-button>
+				<md-button aria-label="Thumb Down" ng-click="$ctrl.dislike($ctrl.pudhir)" ng-class="{ 'active': $ctrl.pudhir.disliked }" class="action-button-icon"> 
+					<md-icon md-svg-icon="images/svg/thumb_down.svg"></md-icon> {{$ctrl.pudhir.dislikes}} 
+				</md-button>			
+			</div>
+		</div>
+        <md-toolbar layout-align="center center" layout="row" class="action_bar md-accent">
+            <md-button class="md-raised md-primary pudhir-action-button" ng-disabled="$ctrl.pudhir.first" aria-label="Prev" ng-click="$ctrl.previous($ctrl.pudhir.seq)"> 
+                {{'label.previous' | i18next}}
+             </md-button>
+            <md-button class="md-raised md-primary pudhir-action-button" ng-disabled="$ctrl.pudhir.isAnswer" aria-label="Answer" ng-click="$ctrl.viewAnswer()"> 
+                {{'label.answer' | i18next}}  
+            </md-button>
+            <md-button class="md-raised md-primary pudhir-action-button" ng-disabled="$ctrl.pudhir.last" aria-label="Next" ng-click="$ctrl.next($ctrl.pudhir.seq)"> 
+                {{'label.next' | i18next}} 
+            </md-button>
+        </md-toolbar> 
+
+    </div>   
+
+</md-content>
