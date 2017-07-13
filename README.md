@@ -4,11 +4,11 @@ Riddle Android App build on Cordova
 
 ## Getting Started
 
-Clone the porject into your local file system 
-    <code>git clone https://github.com/SmartDroidies/Riddles.git</code>
+<li> Clone the porject into your local file system 
+     <code>git clone https://github.com/SmartDroidies/Riddles.git</code>
 
-Run the app on your browser
-    <code>cordova run browser</code>
+<li> Run the app on your browser
+      <code>cordova run browser</code>
 
 ### Prerequisites
 
