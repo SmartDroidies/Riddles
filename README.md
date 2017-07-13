@@ -12,3 +12,5 @@ Clone the porject into your local file system
 
 You need below tools for running the app from your system
 
+1. GIT Client - To checkout/checkin files to GitHub repository
+2. Apache Cordova - To build the App uding cordova CLI 
