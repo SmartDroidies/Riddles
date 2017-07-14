@@ -95,7 +95,7 @@ angular.
 		};
 		
 
-		self.initialize();
+		//self.initialize();
 		
   		if(!$rootScope.visited) {
   			$rootScope.visited = true;

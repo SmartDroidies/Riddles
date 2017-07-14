@@ -1,6 +1,6 @@
 {
   "app": {
-    "name": "\u0bb5\u0bbf\u0b9f\u0bc1\u0b95\u0ba4\u0bc8\u0b95\u0bb3\u0bcd",
+    "name": "Riddles",
     "error": "Failed to collect vidugadhai. Check your network settings" ,
     "pudhir_no": "\u0bb5\u0bbf\u0b9f\u0bc1\u0b95\u0ba4\u0bc8 \u0b8e\u0ba3\u0bcd" 
   },
@@ -16,5 +16,17 @@
   "desc": {
     "simple": "\u0b9a\u0bae\u0bc8\u0baf\u0bb2\u0bcd",
     "challenge": "\u0b9a\u0bc8\u0bb5\u0bae\u0bcd"
+  },
+  "button" : {
+    "restart" : "Restart",
+    "continue" : "Continue",
+    "start" : "Start",
+    "favourite" : "Favourites"
+  },
+  "error": {
+    "network": "Could not collect data from server. Please check your internet settings and try again",
+    "unknown": "Something went wrong and we are not able to handle it",
+    "end": "Thank you for using Riddles App. Hope you had fun. Please try later for more riddles", 
+	"favempty": "You don't have any favourite items" 
   }
 }

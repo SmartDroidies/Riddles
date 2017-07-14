@@ -30,10 +30,6 @@ angular.
         otherwise('/home');
     }
   ])
-  .constant('config', {
-    appName: 'Vidukathai',
-    appVersion: '2.0.0'
-  })
   
   //Theme configure 
   .config(function($mdThemingProvider, $provide) {
@@ -48,6 +44,7 @@ angular.
   
 .run(function($rootScope, $location, $log) {
 
+	/*
 	//Share App
   	$rootScope.share = function () {   
   	  window.plugins.socialsharing.share('\u0bae\u0bc0\u0ba3\u0bcd\u0b9f\u0bc1\u0bae\u0bcd \u0baa\u0baf\u0ba3\u0bbf\u0baa\u0bcd\u0baa\u0bcb\u0bae\u0bcd \u0b9a\u0bbf\u0bb1\u0bc1 \u0bb5\u0baf\u0ba4\u0bbf\u0bb1\u0bcd\u0b95\u0bc1 - ', '\u0bb5\u0bbf\u0b9f\u0bc1\u0b95\u0ba4\u0bc8\u0b95\u0bb3\u0bcd', null, C_APPMKT_URL);
@@ -56,7 +53,7 @@ angular.
 
   	//Rate US
   	$rootScope.rateus = function () {        
-		  var url = "market://details?id=com.smart.droid.tamil.pudhir";
+	  var url = "market://details?id=com.smart.droid.tamil.pudhir";
       window.open(url,"_system");		
       window.Firebase.event("app_rate", 'rate');
   	};  
@@ -108,13 +105,14 @@ angular.
 	};     
 
 	$rootScope.authenticate(); 	
+	*/
 	
 });
 
 //ng-i18next - use i18next with Angularjs
 angular.module('jm.i18next').config(['$i18nextProvider', function ($i18nextProvider) {
     $i18nextProvider.options = {
-        lng: 'ta',
+        lng: 'en',
         useCookie: false,
         useLocalStorage: false,
         fallbackLng: 'en',

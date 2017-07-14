@@ -1,5 +1,5 @@
 /* Constants */
-
+/*
 var C_CACHE_VGADAI = "cache-vgadhai";
 var C_CACHE_FAV_VGADAI = "cache-fav-vgadhai";
 var C_SYNC_COUNT = 10;
@@ -79,3 +79,4 @@ document.addEventListener("onAdDismiss", function(data) {
     if(AdMob) AdMob.prepareInterstitial( {adId:admobid.interstitial, autoShow:false} );
   }
 });
+*/
