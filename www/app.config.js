@@ -35,11 +35,10 @@ angular.
   .config(function($mdThemingProvider, $provide) {
 
   	$mdThemingProvider.theme('default')
-		.primaryPalette('red')
-		.accentPalette('grey')
-		.warnPalette('deep-orange')
-		.backgroundPalette('grey')
-		.dark();
+		.primaryPalette('cyan')
+		.accentPalette('orange')
+		.warnPalette('red')
+		.backgroundPalette('brown')
   })
   
 .run(function($rootScope, $location, $log) {
@@ -85,11 +84,12 @@ angular.
     $rootScope.home = function () {        
       $location.path("/home"); 
     };  
+	*/
 	
 	$rootScope.authenticate = function() {
 		firebase.auth().signInAnonymously().catch(function(error) {
-			window.Firebase.exception(error.message);
 			$log.error(error.message);
+			window.Firebase.exception(error.message);
 		});
 
 		firebase.auth().onAuthStateChanged(function(user) {
@@ -105,7 +105,6 @@ angular.
 	};     
 
 	$rootScope.authenticate(); 	
-	*/
 	
 });
 

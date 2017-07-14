@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.smart.droid.tamil.pudhir" version="0.0.4" android-versionCode="4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="https://cordova.apache.org/ns/1.0">
-    <name>\u0bb5\u0bbf\u0b9f\u0bc1\u0b95\u0ba4\u0bc8\u0b95\u0bb3\u0bcd</name>
+<widget id="com.smart.droid.riddles" version="0.0.1" android-versionCode="1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="https://cordova.apache.org/ns/1.0">
+    <name>Riddle</name>
     <description>
-        Vidugadhaigal - A Sweet and Short App for Tamil Audience
+        Riddles - A Sweet and Short Android App
     </description>
     <author email="dev@cordova.apache.org" href="http://cordova.io">
         SmartDroidies Team 
